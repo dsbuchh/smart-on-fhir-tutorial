@@ -16,6 +16,8 @@ build/
 .cache
 .vagrant
 .sass-cache
+Gemfile*
+.gitignore
 
 # YARD artifacts
 .yardoc
