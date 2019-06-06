@@ -1,0 +1,26 @@
+{
+  "name": "smart-on-fhir-tutorial",
+  "version": "1.0.0",
+  "description": "Cerner SMART on FHIR Tutorial",
+  "main": "launch.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dsbuchh/smart-on-fhir-tutorial.git"
+  },
+  "keywords": [
+    "smart",
+    "fhir"
+  ],
+  "author": "Cerner",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dsbuchh/smart-on-fhir-tutorial/issues"
+  },
+  "homepage": "https://github.com/dsbuchh/smart-on-fhir-tutorial#readme",
+  "dependencies": {
+    "fhirclient": "^0.1.15"
+  }
+}
