@@ -20,5 +20,7 @@
     "url": "https://github.com/dsbuchh/smart-on-fhir-tutorial/issues"
   },
   "homepage": "https://github.com/dsbuchh/smart-on-fhir-tutorial#readme",
-  "dependencies": {}
+  "dependencies": {
+    "fhirclient": "^0.1.15"
+  }
 }
