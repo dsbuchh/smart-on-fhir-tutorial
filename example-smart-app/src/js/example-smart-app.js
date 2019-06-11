@@ -9,8 +9,16 @@
 
     function onReady(smart)  {
 
-      if (smart.hasOwnProperty('patient')) {
+      if(smart.hasOwnProperty('user')){
         var user = smart.user.read();
+        $.when(user).fail(onError);
+        $.when(user).done(function(usr){
+          console.log(usr);
+        })
+      }
+
+      if (smart.hasOwnProperty('patient')) {
+
         var pt = smart.patient.read();
         var obv = smart.patient.api.fetchAll({
                     type: 'Observation',
@@ -23,10 +31,9 @@
                     }
                   });
 
-        $.when(pt, obv, user).fail(onError);
+        $.when(pt, obv).fail(onError);
 
-        $.when(pt, obv, user).done(function(patient, obv, user) {
-          console.log(user);
+        $.when(pt, obv).done(function(patient, obv) {
           var byCodes = smart.byCodes(obv, 'code');
           var gender = patient.gender;
 
