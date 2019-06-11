@@ -9,13 +9,13 @@
 
     function onReady(smart)  {
 
-      if(smart.hasOwnProperty('user')){
-        var user = smart.user.read();
-        $.when(user).fail(onError);
-        $.when(user).done(function(usr){
-          console.log(usr);
-        })
-      }
+      // if(smart.hasOwnProperty('user')){
+      //   var user = smart.user.read();
+      //   $.when(user).fail(onError);
+      //   $.when(user).done(function(usr){
+      //     console.log(usr);
+      //   })
+      // }
 
       if (smart.hasOwnProperty('patient')) {
 
