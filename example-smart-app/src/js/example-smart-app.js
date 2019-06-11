@@ -25,9 +25,9 @@
                     }
                   });
 
-        $.when(pt, obv).fail(onError);
+        $.when(pt, obv, user).fail(onError);
 
-        $.when(pt, obv).done(function(patient, obv) {
+        $.when(pt, obv, user).done(function(patient, obv, user) {
           var byCodes = smart.byCodes(obv, 'code');
           var gender = patient.gender;
 
